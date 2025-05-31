@@ -1,16 +1,20 @@
 import React from 'react';
 import Captcha from './captcha';
+
 export default function Home() {
   return (
     <main style={styles.container}>
-     
-      <div style={styles.captcha}><Captcha/></div>
-    
+      <div style={styles.captcha}><Captcha /></div>
     </main>
   );
 }
 
-const styles = {
+const styles: {
+  container: React.CSSProperties;
+  input: React.CSSProperties;
+  button: React.CSSProperties;
+  captcha?: React.CSSProperties; // Optional if you're using it
+} = {
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -28,7 +32,6 @@ const styles = {
     border: '1px solid #ccc',
     borderRadius: '5px',
   },
-  
   button: {
     padding: '10px 20px',
     fontSize: '16px',
