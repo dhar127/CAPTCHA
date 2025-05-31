@@ -57,6 +57,3 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/app/buildin
 
 
 ---
-
-Let me know if you'd like this turned into a downloadable `.md` file or want it embedded into your project automatically!
-```
