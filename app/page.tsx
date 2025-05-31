@@ -1,5 +1,6 @@
 import React from 'react';
 import Captcha from './captcha';
+import type { CSSProperties } from 'react';
 
 export default function Home() {
   return (
@@ -10,10 +11,10 @@ export default function Home() {
 }
 
 const styles: {
-  container: React.CSSProperties;
-  input: React.CSSProperties;
-  button: React.CSSProperties;
-  captcha?: React.CSSProperties; // Optional if you're using it
+  container: CSSProperties;
+  input: CSSProperties;
+  button: CSSProperties;
+  captcha: CSSProperties;
 } = {
   container: {
     display: 'flex',
@@ -41,4 +42,7 @@ const styles: {
     borderRadius: '5px',
     cursor: 'pointer',
   },
+  captcha: {
+    // Optional: Add styles if needed
+  }
 };
